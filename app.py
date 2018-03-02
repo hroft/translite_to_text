@@ -8,7 +8,7 @@ regex = r"from [0.*-9]* to [0-9].*"
 # Обновление данных в таблице
 def update_cdr(path, recordingfile):
     # read database configuration
-    db_config = {'password': 'Paralaxx', 'host': 'localhost', 'user': 'root', 'database': 'asteriskcdrdb'}
+    db_config = {'password': 'P', 'host': 'localhost', 'user': '', 'database': ''}
     # prepare query and data
     query = """UPDATE cdr SET path=%s WHERE recordingfile =%s """
     data = (path, recordingfile)
